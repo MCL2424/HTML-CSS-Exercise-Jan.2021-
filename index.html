@@ -7,75 +7,78 @@
     <title>HTML/CSS Table Challenge</title>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr> 
-                <th>Band</th>
-                <th>Year Formed</th>
-                <th>No. of Albums</th>
-                <th>Most Famous Songs</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Buzzcocks</td>
-                <td>1976</td>
-                <td>9</td>
-                <td>Even fallen in love (with someone you shouldn't've)</td>
-            </tr>
-            <tr>
-                <td>The Clash</td>
-                <td>1976</td>
-                <td>6</td>
-                <td>London Calling</td>
-            </tr>
-            <tr>
-                <td>The Damned</td>
-                <td>1976</td>
-                <td>10</td>
-                <td>Smash it up</td>
-            </tr>
-            <tr>
-                <td>Sex Pistols</td>
-                <td>1975</td>
-                <td>1</td>
-                <td>Anarchy in the UK</td>
-            </tr>
-            <tr>
-                <td>Sham 69</td>
-                <td>1976</td>
-                <td>13</td>
-                <td>If the Kids Are United</td>
-            </tr>
-            <tr>
-                <td>Siouxsie and the Banshees</td>
-                <td>1976</td>
-                <td>11</td>
-                <td>Hong Kong Garden</td>
-            </tr>
-            <tr>
-                <td>Stiff Little Fingers</td>
-                <td>1977</td>
-                <td>10</td>
-                <td>Suspect Device</td>
-            </tr>
-            <tr>
-                <td>The Stranglers</td>
-                <td>1974</td>
-                <td>17</td>
-                <td>No More Heroes</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-              <td>Total Albums</td>
-              <td>77</td>
-            </tr>
-          </tfoot>
-
+    <table id="table-one">
+        <caption>A summary of the Uk's most famous punk bands</caption>
+            <colgroup>
+                <col span="1" class="col-one">
+                <col span="1" class="col-two">
+                <col span="1" class="col-three">
+                <col span="1" class="col-four">
+            </colgroup>
+                <thead>
+                    <tr> 
+                        <th>Band</th>
+                        <th>Year Formed</th>
+                        <th>No. of Albums</th>
+                        <th>Most Famous Songs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-bold">Buzzcocks</td>
+                        <td >1976</td>
+                        <td>9</td>
+                        <td>Even fallen in love (with someone you shouldn't've)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">The Clash</td>
+                        <td>1976</td>
+                        <td>6</td>
+                        <td>London Calling</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">The Damned</td>
+                        <td>1976</td>
+                        <td>10</td>
+                        <td>Smash it up</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">Sex Pistols</td>
+                        <td>1975</td>
+                        <td>1</td>
+                        <td>Anarchy in the UK</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">Sham 69</td>
+                        <td>1976</td>
+                        <td>13</td>
+                        <td>If the Kids Are United</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">Siouxsie and the Banshees</td>
+                        <td>1976</td>
+                        <td>11</td>
+                        <td>Hong Kong Garden</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">Stiff Little Fingers</td>
+                        <td>1977</td>
+                        <td>10</td>
+                        <td>Suspect Device</td>
+                    </tr>
+                    <tr>
+                        <td class="text-bold">The Stranglers</td>
+                        <td>1974</td>
+                        <td>17</td>
+                        <td>No More Heroes</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                    <td class="border-right text-to-right" colspan="2">Total Albums</td>
+                    <td td class="text-to-left" colspan="2">77</td>
+                    </tr>
+                </tfoot>
     </table>
-    <footer>
-        <p>A summary of the Uk's most famous punk bands</p>
-    </footer>
 </body>
 </html>
