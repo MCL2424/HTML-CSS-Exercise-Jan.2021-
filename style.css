@@ -8,23 +8,105 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* Color variables*/
+:root {
+    --white: #ffffff;
+    --purple: #800080; /*border color*/
+    --light-pink: #e495e4; /*even rows*/
+    --dark-pink: #ff33cc /*odd rows*/
+  }
+
 body {
     font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman","Helvetica", "Geneva", "Arial", sans-serif;
     font-weight:400; 
     font-stretch:normal;
-
+    text-align: center;
 }
+
 
 /* Table */
-table {
+#table-one {
     table-layout: fixed;
     width:100%;  /* The table width should fill any container it is put in*/
-    background-color: red;
+    border-collapse: collapse;
+    border-left: 2px solid var(--purple);
+    border-right: 2px solid var(--purple);
+    border-bottom: 2px solid var(--purple);
+    caption-side: bottom; /*to move the caption at the bottom that by default is placed at the top*/
 }
 
-/* Footer of the page*/
-footer{
-    clear:both;
-    padding:30px;
-    text-align: center;
+/* Table columns*/
+.col-one {
+    width: 30%;
+}
+.col-two {
+    width: 20%;
+}
+.col-three {
+    width: 15%;
+}
+.col-four {
+    width: 35%;
+}
+
+thead, tfoot {
+    font-family: "Rock Salt"; /* For the table heading and footer*/
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/rocksalt/v11/MwQ0bhv11fWD6QsAVOZrt0M6.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+th, tfoot{
+    border: 2px solid var(--purple);
+    padding: 10px;
+    background-image: 
+    linear-gradient(to bottom right, rgba(0,0,0,0.1),rgba(0,0,0,0.5)),
+    url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fleopardskin.jpg?1527763317245);
+    color:var(--white);
+}
+
+/*Table body*/
+
+tbody>tr:nth-child(even) {
+    background: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fnoise.png);
+    background-color:var(--light-pink);
+}
+
+tbody>tr:nth-child(odd) {
+    background: url(https://cdn.glitch.com/8b1beacc-937c-4072-93d6-4ae825ab1a7a%2Fnoise.png);
+    background-color:var(--dark-pink);
+}
+
+td {
+    padding:15px;
+
+}
+
+.border-right {
+   border-right: 2px solid var(--purple)
+}
+
+/* classes */
+.text-bold {
+    font-weight: bold;
+}
+
+.text-to-right{
+    text-align: right;
+}
+
+.text-to-left{
+    text-align: left;
+}
+
+/* Caption*/
+caption {
+    text-align: right;
+    padding: 20px;
+    font-family: "Rock Salt"; /* For the table heading and footer*/
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/rocksalt/v11/MwQ0bhv11fWD6QsAVOZrt0M6.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
